@@ -9,38 +9,39 @@
 </head>
 <body>
 
-        <div class="head"><h3>Currency Converter</h3>
+    <div class="head">
+        <h3>Currency Converter</h3>
         <form>
-        <p id="amount-text">Enter Amount</p>
-        <input type="text" class="amount">
-        <div class="dropdown-amount">
-            <div class="from">
-                <p>from</p>
-                <div class="select-currency">
-                    <img src="https://flagsapi.com/US/flat/64.png">
-                    <select name="from">
-                       
-                    </select>
+            <p id="amount-text">Enter Amount</p>
+            <input type="number" class="amount" value="1">
+            
+            <div class="dropdown-amount">
+                <div class="from">
+                    <p>From</p>
+                    <div class="select-currency">
+                        <img src="https://flagsapi.com/US/flat/64.png" alt="flag">
+                        <select name="from"></select>
+                    </div>
+                </div>
+                
+                <i class="fa-solid fa-right-left"></i>
+                
+                <div class="to">
+                    <p>To</p>
+                    <div class="select-currency">
+                        <img src="https://flagsapi.com/PK/flat/64.png" alt="flag">
+                        <select name="to"></select>
+                    </div>
                 </div>
             </div>
-            <i class="fa-solid fa-right-left"></i>
-            <div class="to">
-                <p>to</p>
-                <div class="select-currency">
-                    <img src="https://flagsapi.com/PK/flat/64.png">
-                    <select name="to">
-                       
-                    </select>
-                </div>
-            </div>
-        </div>
-        <p id="convert">Converted Amount</p>
-        <div class="msg"></div>
-        <button>Get Exchange Rate</button>
-    </form>
-        </div>
+            
+            <p id="convert">Converted Amount</p>
+            <div class="msg">1 USD = 0.00 PKR</div>
+            
+            <button>Get Exchange Rate</button>
+        </form>
+    </div>
     
-<script src="convertor.js"></script>
-<script src="code.js"></script>
+    <script src="code.js"></script>
 </body>
 </html>
